@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Simpsons</title>
 </head>
@@ -17,15 +18,28 @@
             <figure class = "couch">
                 <img src="img/simpsons-canape.jpg" class="couch" alt="simpsons couch">
             </figure>
-            <nav>
-                <ul>
-                    <li><a href="accueil.html">ACCUEIL</a></li>
-                    <li><a href="le-film.html">LE FILM</a></li>
-                    <li><a href="personnages.html">PERSONNAGES</a></li>
-                    <li><a href="histoire.html">HISTOIRE</a></li>
-                    <li><a href="matt-groening.html">MATT GROENING</a></li>
-                </ul>
-            </nav>
+                    <button popovertarget="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    
+                    <nav popover role="menu" id="menu">
+                        <button popovertarget="menu" popovertargetaction="hide">
+                            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8L8 16M8.00001 8L16 16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                            <ul>
+                                <li><a href="accueil.html">ACCUEIL</a></li>
+                                <li><a href="le-film.html">LE FILM</a></li>
+                                <li><a href="personnages.html">PERSONNAGES</a></li>
+                                <li><a href="histoire.html">HISTOIRE</a></li>
+                                <li><a href="matt-groening.html">MATT GROENING</a></li>
+                            </ul>
+                    </nav>
         </header>
         <main>
             <article>
